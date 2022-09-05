@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+    section .box{
+  
+    padding-bottom:0px;
+    width:420px;
+    height:420px;
+    margin: auto;
+    position: relative;
+    
+}
+
+.box-image img{
+    padding-top: 2px;
+    padding: 0;
+    width:420px;
+    height: 420px;
+    animation: anima;
+    animation-duration: 800ms;    
+}
+
+
+
+@keyframes anima{
+
+    from{transform: translate(-50px,00);}
+    to{transform: translate(0px,00);}
+}
+
+/* 
+.bolinhas{
+
+
+} */
+
+.bolinhas span{
+display: none;
+/*
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: red;
+*/
+}
+
+.bolinhas span.marcador{
+
+   background-color: blue;
+}  

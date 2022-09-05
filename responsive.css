@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 600px) {
+    /*mobile*/
+
+html {
+        scroll-behavior: smooth;
+        /*suaviza a navegação na barra de rolagen*/
+    }
+   
+
+    .banner {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+    }
+
+    .banner h1 {
+
+        font-size: 5.5rem;
+        margin: auto;
+        line-height: 5.5rem;
+        margin-bottom: 1rem;
+
+    }
+
+    .sidebar {
+        width: 15rem;
+        height: 98vh;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        right: -20rem;
+        transition: all 1s;
+        z-index: 140;
+        overflow: hidden;
+    }
+
+    .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .menu-item {
+        
+        text-align: center;
+        margin-bottom: .9rem;
+    }
+
+
+    header {
+        width: 100%;
+        height: 60vh;
+        overflow: hidden;
+    }
+
+    .img-wrapper {
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+
+    .combos {
+        margin: auto;
+        height: 100%;
+        display: block;
+        padding: 0px;
+        text-align: center;
+        text-align: center;
+    }
+
+
+    .sessao-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sessao-header h1 {
+        margin: auto;
+        font-family: var(--font-primary);
+        font-size: 2.5rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .combo-header {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .combo-header i {
+        font-size: 3rem;
+    }
+
+    .combo-header h3 {
+        margin: auto;
+        text-align: center;
+        font-family: var(--font-primary);
+        font-size:2.1rem;
+        
+        /*espaçamento entre objetos*/
+    }
+
+    .combo-text {
+        font-family: var(--font-primary);
+    }
+
+
+
+    .combos-img-wrapper img {
+        object-fit: cover;
+        width: 50%;
+    margin-left: 8rem;
+    }
+
+    .projetos {
+        display:block;
+        padding: 2px 3px 0px;
+        justify-content: space-evenly;
+        margin-bottom: 0.1rem;
+     
+    }
+
+  .mapBox {              
+        position: relative;
+        width: 360px;
+        height: 360px;
+        background: #fff;
+
+    }
+
+    .mapBox iframe {        
+        width:90%;
+        height:90%;
+    }
+
+    .card {
+   
+        padding: 5px;
+        margin: auto;
+        position: relative;
+        width: 17rem;
+        height: 18rem;
+    }
+
+    .card-img-wrapper {
+        width: 100%;
+        height: 100%;
+
+        border-radius: .5rem;
+    }
+
+    .card-img-wrapper img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: .5rem;
+        opacity: .8;
+        transition: opacity .3s;
+    }
+
+    .card:hover .card-img-wrapper img {
+        opacity: .5;
+    }
+
+    .card-info {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        /*posição em relação ao card img*/
+        bottom: 0;
+        padding: 1rem;
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);
+        transition: all .3s;
+    }
+
+    .card-info h2 {
+        font-size: var(--font-action);
+        font-size: 2rem;
+        font-weight: 500;
+        /*peso da fonte*/
+
+        margin-bottom: .5rem;
+        /*ESPAÇAMENTO*/
+    }
+
+    .card-info h3 {
+        font-family: var(--font-action);
+
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-info p {
+        font-family: var(--font-secundary);
+
+        font-weight: 400;
+        width: 80%;
+        margin-bottom: 2rem;
+        /*ESPAÇAMENTO*/
+    }
+
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content p {
+        margin-top: 2rem;
+        margin: auto;
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+
+    .social-list a {
+        margin: auto;
+
+    }
+
+    .social-list ul {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    #link-topo {
+
+        right: .9rem;
+        bottom: 2rem;
+        width: 3rem;
+    }
+
+}
+
+
+@media (min-width:600px) and (max-width: 768px) {}
+  
+
+
+@media (min-width:768px) and (max-width: 992px) {}
+
+
+@media (min-width:992px) and (max-width: 1200px) {}
+
+@media (min-width:1200px) {}

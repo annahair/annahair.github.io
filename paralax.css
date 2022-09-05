@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+
+
+main h1{
+    padding-top: 1rem;
+    text-align: center;
+    color: black;
+    font-size:2rem;
+}
+section#paralax{
+    
+    padding-top: 10vh;
+    padding-bottom: 5´x;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family:  var(--font-action);;
+    font-size: 2vh;
+}
+
+section > p {
+    padding-bottom:2rem;
+    font-size: 3.5vh;
+    
+}
+
+
+
+section.normal {
+    padding-bottom: 2vh;;
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 15rem;
+}
+
+section.imagem > p {
+    font-size: 3vh;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+   
+    background-image: url("imagens/mão2.jpg");
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url("imagens/mão.jpg");
+    background-position: right center;
+}
+section#img03 {
+    background-image: url("imagens/pé.jpg");
+    background-position: right center;
+}
+section#img04 {
+    background-image: url("imagens/esmalte.jpg");
+    background-position: right center;
+}
