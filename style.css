@@ -519,7 +519,9 @@ section#img04 {
     height: 20%;
 }
 
+
 marquee {
+    position:relative;
     padding: 6px;
     background-color: deeppink;
     font-weight: bolder;
@@ -528,6 +530,7 @@ marquee {
 
 
 }
+
 /*PROJETOS*/
 .projetos {
     display: flex;

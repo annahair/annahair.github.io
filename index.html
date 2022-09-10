@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="preloader-com-css3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="paralax.css">
@@ -18,427 +21,234 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>fechar</span>
-            <!--id não pode repetir o nome-->
+    <!-- início do preloader -->
+
+    <body style="overflow: visible;">
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="inner">
+                <div class="bolas">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
-        <!-- elemento que quando o menu abre ele aparece, e se clicado ele some e fecha o menu -->
-        <div class="fechaMenu isClose"></div>
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="imagens/bg4.jpg" alt="bg4.jpg">
-            </div>
-            <div class="banner">
-                <!--posicionamento do texto pra frente da img banner-->
-                <h1>Anna Hair</h1>
-                <p>Variedades e Cosméticos</p>
 
-                <button class="btn"><a
-                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário como você?"
-                        target="_blank">Agendar</a></button>
+        <div class="container">
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>fechar</span>
+                <!--id não pode repetir o nome-->
             </div>
-        </header>
-        <!-- paralax -->
+            <!-- elemento que quando o menu abre ele aparece, e se clicado ele some e fecha o menu -->
+            <div class="fechaMenu isClose"></div>
+            <header id="home">
+                <div class="img-wrapper">
+                    <img src="imagens/bg4.jpg" alt="bg4.jpg">
+                </div>
+                <div class="banner">
+                    <!--posicionamento do texto pra frente da img banner-->
+                    <h1>Anna Hair</h1>
+                    <p>Variedades e Cosméticos</p>
 
-        <section id="paralax" class="normal">
-            <p>
-                Serviços completos para <br>
-                a valorização da beleza <br>
-                de nossos clientes<br>
-            </p>
-        </section>
-        <section class="imagem" id="img01">
-            <p>
-                Agende um horário
-            </p>
-        </section>
-        <section id="paralax" class="normal">
-            <p>
-                Pé e Mão
-            </p>
+                    <button class="btn"><a
+                            href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário como você?"
+                            target="_blank">Agendar</a></button>
+                </div>
+            </header>
+            <!-- paralax -->
 
-        </section>
+            <section id="paralax" class="normal">
+                <p>
+                    Serviços completos para <br>
+                    a valorização da beleza <br>
+                    de nossos clientes<br>
+                </p>
+            </section>
+            <section class="imagem" id="img01">
+                <p>
+                    Agende um horário
+                </p>
+            </section>
+            <section id="paralax" class="normal">
+                <p>
+                    Pé e Mão
+                </p>
 
-        <section class="imagem" id="img02">
-            <p>
-                Designer de unhas
-            </p>
-        </section>
+            </section>
 
-        <section id="paralax" class="normal">
-            <p>
-                Atendimento de qualidade
-            </p>
-        </section>
-        <section class="imagem" id="img03">
-            <p>
-                Temos diversos produtos
-            </p>
-        </section>
+            <section class="imagem" id="img02">
+                <p>
+                    Designer de unhas
+                </p>
+            </section>
 
-        <section id="paralax" class="normal">
-            <p>
-                Agende um horário
-            </p>
-        </section>
-        <section class="imagem" id="img04">
-            <p>
-                Venha conferir nossos produtos<br>
-                Temos vestuários e acessórios<br>
-            </p>
-        </section>
+            <section id="paralax" class="normal">
+                <p>
+                    Atendimento de qualidade
+                </p>
+            </section>
+            <section class="imagem" id="img03">
+                <p>
+                    Temos diversos produtos
+                </p>
+            </section>
 
-        <section class="box-box">
-            <div class="box">
-                <div class="box-image"><img src='imagens/bg-form.jpg'></div>
-                <div class="box-image"><img src='imagens/bg-form2.jpg'></div>
-                <div class="box-image"><img src='imagens/bg-form3.jpg'></div>
-                <div class="box-image"><img src='imagens/bg-form4.jpg'></div>
-            </div>
-            <div class="bolinhas">
-            </div>
-        </section>
-        <script src="app.js"></script>
-        <aside class="sidebar">
-            <nav>
-                <!--div.sidebar>nav>ul.menu>(li.menu-item>a.menu-link)*5-->
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="menu-link"><i class="fa-solid fa-house-laptop">
-                                Home</i></a></li>
-                    <li class="menu-item"><a href="#produtos" class="menu-link">Serviços</a></li>
-                    <li class="menu-item"><a href="#cabelos" class="menu-link">Cabelos</a></li>
-                    <li class="menu-item"><a href="#mao" class="menu-link">Pé & Mão</a></li>                   
-                    <li class="menu-item"><a href="#videos" class="menu-link"><i class="fa-solid fa-circle-play"></i>
-                            Videos</a></li>
-                    <li class="menu-item"><a href="#localize" class="menu-link"><i class="fa-solid fa-location-dot"></i>
-                            Local</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href="https://www.facebook.com/profile.php?id=100005006537913 " target="_blank"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://instagram.com/annahair_variedades?utm_medium=copy_link" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário como você?"
-                    target="_blank"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </aside>
-        <!--SESSÃO COMBOS-->
-        <!--section.sessao-conhecimentos>(.sessao-header>h1)+.conhecimentos>(.conhecimento>(.conhecimento-header>i.fab+h3).conhecimento-text>p>lorem50)*6-->
-        <marquee> ATENÇÃO - VALORES SOMENTE PELO WHATSS!!! APROVEITE NOSSAS PROMOÇÕES DESSE MÊS <br></marquee>
-        <section class="sessao-combos" id="produtos">
-            <div class="sessao-header">
-                <h1>Produtos & Serviços</h1>
-            </div>
-            <div class="combos-img-wrapper">
-                <img src="imagem.png" alt="etiqueta">
-            </div>
-            <div class="combos">
-                <div class="combo">
-                    <div class="combo-header">
-                        <h3>Cosméticos</h3>
-                    </div>
-                    <div class="combo-text">
-                        <li>Perfumes</li>
-                        <li>Cremes</li>
-                        <li>Hidratantes</li>
-                        <li>Sabonetes</li>
-                        <li>Maquiagem</li>
-                    </div>
-                    <button id="btn"><a
-                            href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus cosméticos?"
-                            target="_blank">Saiba Mais</a></button>
-                </div>
+            <section id="paralax" class="normal">
+                <p>
+                    Agende um horário
+                </p>
+            </section>
+            <section class="imagem" id="img04">
+                <p>
+                    Venha conferir nossos produtos<br>
+                    Temos vestuários e acessórios<br>
+                </p>
+            </section>
 
-                <div class="combo">
-                    <div class="combo-header">
-                        <h3>Unhas</h3>
-                    </div>
-                    <div class="combo-text">
-                        <li>Pè & Mão</li>
-                        <li>Postiça</li>
-                        <li>Decorada</li>
-                        <li>Banho de gel</li>
-                        <li>Francesa</li>
-                        <button id="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre unhas?"
-                                target="_blank">Saiba Mais</a></button>
-                    </div>
+            <section class="box-box">
+                <div class="box">
+                    <div class="box-image"><img src='imagens/bg-form.jpg'></div>
+                    <div class="box-image"><img src='imagens/bg-form2.jpg'></div>
+                    <!-- <div class="box-image"><img src='imagens/bg-form3.jpg'></div> -->
+                    <div class="box-image"><img src='imagens/bg-form4.jpg'></div>
                 </div>
-                <div class="combo">
-                    <div class="combo-header">
-                        <h3>Acessórios</h3>
-                    </div>
-                    <div class="combo-text">
-                        <li>Colares</li>
-                        <li>Anéis</li>
-                        <li>Pulseiras</li>
-                        <li>Tiaras</li>
-                        <li>Relógios</li>
-                        <button id="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus acessórios?"
-                                target="_blank">Saiba Mais</a></button>
-                    </div>
+                <div class="bolinhas">
                 </div>
-                <div class="combo">
-                    <div class="combo-header">
-                        <h3>Vestuário</h3>
-                    </div>
-                    <div class="combo-text">
-                        <li>Roupas Feminina</li>
-                        <li>Roupas Masculinas</li>
-                        <li>Infantil Menina</li>
-                        <li>Infantil Menino</li>
-                        <li>Bonés</li>
-                        <button id="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus vestuários?"
-                                target="_blank">Saiba Mais</a></button>
-                    </div>
+            </section>
+            <script src="app.js"></script>
+            <aside class="sidebar">
+                <nav>
+                    <!--div.sidebar>nav>ul.menu>(li.menu-item>a.menu-link)*5-->
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link"><i class="fa-solid fa-house-laptop">
+                                    Home</i></a></li>
+                        <li class="menu-item"><a href="#produtos" class="menu-link">Serviços</a></li>
+                        <li class="menu-item"><a href="#cabelos" class="menu-link">Cabelos</a></li>
+                        <li class="menu-item"><a href="#mao" class="menu-link">Pé & Mão</a></li>
+                        <li class="menu-item"><a href="#videos" class="menu-link"><i
+                                    class="fa-solid fa-circle-play"></i>
+                                Videos</a></li>
+                        <li class="menu-item"><a href="#localize" class="menu-link"><i
+                                    class="fa-solid fa-location-dot"></i>
+                                Local</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/profile.php?id=100005006537913 " target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/annahair_variedades?utm_medium=copy_link" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário como você?"
+                        target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <div class="combo">
-                    <div class="combo-header">
-                        <h3>Cabelos</h3>
-                    </div>
-                    <div class="combo-text">
-                        <li>Progressivas</li>
-                        <li>Hidratação</li>
-                        <li>Escova</li>
-                        <li>Luzes</li>
-                        <li>Escova & Prancha</li>
-                        <button id="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre cabelos?"
-                                target="_blank">Saiba Mais</a></button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--SESSÃO PROJETOS-->
-        <section class="sessao-projetos" id="cabelos">
-            <div class="combos-img-wrapper">
-                <img src="logo.png" alt="etiqueta">
-            </div>
-            <div class="sessao-header">
-                <h1>Cabelos</h1>
-            </div>
-            <!--.projetos>.card>(.card-img-wrapper+.card-info>h2+h3+p+button)*3-->
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj01.jpg" alt="imagens do projeto anna hair">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj02.jpg" alt="imagem do projeto doçuras da mila">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj03.jpg" alt="imagens do projeto jenny salgados">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj10.jpg" alt="imagens do projeto anna hair">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj11.jpg" alt="imagem do projeto doçuras da mila">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj12.jpg" alt="imagens do projeto jenny salgados">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj13.jpg" alt="imagens do projeto anna hair">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj14.jpg" alt="imagem do projeto doçuras da mila">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj15.jpg" alt="imagens do projeto jenny salgados">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj16.jpg" alt="imagens do projeto anna hair">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj17.jpg" alt="imagem do projeto doçuras da mila">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj18.jpg" alt="imagens do projeto jenny salgados">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-            </div>
-            <div class="projetos">
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj19.jpg" alt="imagens do projeto anna hair">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj20.jpg" alt="imagem do projeto doçuras da mila">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj21.jpg" alt="imagens do projeto jenny salgados">
-                    </div>
-                    <div class="card-info">
-                        <h2>Venha conferir</h2>
-                        <h3>Agende um horário</h3>
-                        <p>Clique em AGENDAR para saber mais</p>
-                        <button class="btn"><a
-                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
-                                target="_blank">Agendar</a></button>
-                    </div>
-                </div>
-            </div>
-            <section class="sessao-projetos" id="mao">
+            </aside>
+            <!--SESSÃO COMBOS-->
+            <!--section.sessao-conhecimentos>(.sessao-header>h1)+.conhecimentos>(.conhecimento>(.conhecimento-header>i.fab+h3).conhecimento-text>p>lorem50)*6-->
+           <marquee> ATENÇÃO - VALORES SOMENTE PELO WHATSS!!! APROVEITE NOSSAS PROMOÇÕES DESSE MÊS <br></marquee>
+            <section class="sessao-combos" id="produtos">
                 <div class="sessao-header">
-                    <h1>Pé & Mão</h1>
+                    <h1>Produtos & Serviços</h1>
                 </div>
+                <div class="combos-img-wrapper">
+                    <img src="imagem.png" alt="etiqueta">
+                </div>
+                <div class="combos">
+                    <div class="combo">
+                        <div class="combo-header">
+                            <h3>Cosméticos</h3>
+                        </div>
+                        <div class="combo-text">
+                            <li>Perfumes</li>
+                            <li>Cremes</li>
+                            <li>Hidratantes</li>
+                            <li>Sabonetes</li>
+                            <li>Maquiagem</li>
+                        </div>
+                        <button id="btn"><a
+                                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus cosméticos?"
+                                target="_blank">Saiba Mais</a></button>
+                    </div>
 
+                    <div class="combo">
+                        <div class="combo-header">
+                            <h3>Unhas</h3>
+                        </div>
+                        <div class="combo-text">
+                            <li>Pè & Mão</li>
+                            <li>Postiça</li>
+                            <li>Decorada</li>
+                            <li>Banho de gel</li>
+                            <li>Francesa</li>
+                            <button id="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre unhas?"
+                                    target="_blank">Saiba Mais</a></button>
+                        </div>
+                    </div>
+                    <div class="combo">
+                        <div class="combo-header">
+                            <h3>Acessórios</h3>
+                        </div>
+                        <div class="combo-text">
+                            <li>Colares</li>
+                            <li>Anéis</li>
+                            <li>Pulseiras</li>
+                            <li>Tiaras</li>
+                            <li>Relógios</li>
+                            <button id="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus acessórios?"
+                                    target="_blank">Saiba Mais</a></button>
+                        </div>
+                    </div>
+                    <div class="combo">
+                        <div class="combo-header">
+                            <h3>Vestuário</h3>
+                        </div>
+                        <div class="combo-text">
+                            <li>Roupas Feminina</li>
+                            <li>Roupas Masculinas</li>
+                            <li>Infantil Menina</li>
+                            <li>Infantil Menino</li>
+                            <li>Bonés</li>
+                            <button id="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus vestuários?"
+                                    target="_blank">Saiba Mais</a></button>
+                        </div>
+                    </div>
+                    <div class="combo">
+                        <div class="combo-header">
+                            <h3>Cabelos</h3>
+                        </div>
+                        <div class="combo-text">
+                            <li>Progressivas</li>
+                            <li>Hidratação</li>
+                            <li>Escova</li>
+                            <li>Luzes</li>
+                            <li>Escova & Prancha</li>
+                            <button id="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre cabelos?"
+                                    target="_blank">Saiba Mais</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SESSÃO PROJETOS-->
+            <section class="sessao-projetos" id="cabelos">
+                <div class="combos-img-wrapper">
+                    <img src="logo.png" alt="etiqueta">
+                </div>
+                <div class="sessao-header">
+                    <h1>Cabelos</h1>
+                </div>
+                <!--.projetos>.card>(.card-img-wrapper+.card-info>h2+h3+p+button)*3-->
                 <div class="projetos">
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (1).jpg" alt="imagens do projeto anna hair">
+                            <img src="imagens/proj01.jpg" alt="imagens do projeto anna hair">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -451,7 +261,7 @@
                     </div>
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (2).jpg" alt="imagem do projeto doçuras da mila">
+                            <img src="imagens/proj02.jpg" alt="imagem do projeto doçuras da mila">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -464,7 +274,7 @@
                     </div>
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (3).jpg" alt="bolos e doces">
+                            <img src="imagens/proj03.jpg" alt="imagens do projeto jenny salgados">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -479,7 +289,7 @@
                 <div class="projetos">
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (4).jpg" alt="imagens do projeto anna hair">
+                            <img src="imagens/proj10.jpg" alt="imagens do projeto anna hair">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -492,7 +302,7 @@
                     </div>
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (5).jpg" alt="imagem do projeto doçuras da mila">
+                            <img src="imagens/proj11.jpg" alt="imagem do projeto doçuras da mila">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -505,7 +315,7 @@
                     </div>
                     <div class="card">
                         <div class="card-img-wrapper">
-                            <img src="imagens/mao (6).jpg" alt="imagens do projeto jenny salgados">
+                            <img src="imagens/proj12.jpg" alt="imagens do projeto jenny salgados">
                         </div>
                         <div class="card-info">
                             <h2>Venha conferir</h2>
@@ -517,8 +327,218 @@
                         </div>
                     </div>
                 </div>
-          
-                               <div class="projetos">
+                <div class="projetos">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj13.jpg" alt="imagens do projeto anna hair">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj14.jpg" alt="imagem do projeto doçuras da mila">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj15.jpg" alt="imagens do projeto jenny salgados">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj16.jpg" alt="imagens do projeto anna hair">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj17.jpg" alt="imagem do projeto doçuras da mila">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj18.jpg" alt="imagens do projeto jenny salgados">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projetos">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj19.jpg" alt="imagens do projeto anna hair">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj20.jpg" alt="imagem do projeto doçuras da mila">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="imagens/proj21.jpg" alt="imagens do projeto jenny salgados">
+                        </div>
+                        <div class="card-info">
+                            <h2>Venha conferir</h2>
+                            <h3>Agende um horário</h3>
+                            <p>Clique em AGENDAR para saber mais</p>
+                            <button class="btn"><a
+                                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                    target="_blank">Agendar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <section class="sessao-projetos" id="mao">
+                    <div class="sessao-header">
+                        <h1>Pé & Mão</h1>
+                    </div>
+
+                    <div class="projetos">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (1).jpg" alt="imagens do projeto anna hair">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (2).jpg" alt="imagem do projeto doçuras da mila">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (3).jpg" alt="bolos e doces">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projetos">
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (4).jpg" alt="imagens do projeto anna hair">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (5).jpg" alt="imagem do projeto doçuras da mila">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-img-wrapper">
+                                <img src="imagens/mao (6).jpg" alt="imagens do projeto jenny salgados">
+                            </div>
+                            <div class="card-info">
+                                <h2>Venha conferir</h2>
+                                <h3>Agende um horário</h3>
+                                <p>Clique em AGENDAR para saber mais</p>
+                                <button class="btn"><a
+                                        href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de agendar um horário com voçê?"
+                                        target="_blank">Agendar</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projetos">
                         <div class="card">
                             <div class="card-img-wrapper">
                                 <img src="imagens/pe (1).jpg" alt="imagens do projeto anna hair">
@@ -559,72 +579,83 @@
                             </div>
                         </div>
                     </div>
+        </div>
+        </section>
+        <div class="sessao-header" id="videos">
+            <h1><i class="fa-solid fa-circle-play"></i> Videos</h1>
+        </div>
+        <video width="320" poster="" controls>
+            <source src="media/video.mp4" type="video/mp4">
+            <source src="media/video.m4v" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            <source src="media/video.ogv" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+        <video id="carro-chefe" width="320" poster="" controls>
+            <source src="media/video02.mp4" type="video/mp4">
+            <source src="media/video02.mp4" type="video/mp4">
+            <source src="media/video.webm" type="video/webm">
+            <source src="media/video.ogv" type="video/ogg">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+        <div id="localize" class=sessao-header>
+            <h1><i class="fa-solid fa-map-location-dot"></i> Localização</h1>
+        </div>
+        <div class="mapBox">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7610092714726!2d-46.8528546!3d-23.5410967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf016f81daae5f%3A0x5faaef2d8eac9a07!2sAnna%20Hair!5e0!3m2!1spt-BR!2sbr!4v1662363349096!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy 2022,<a href="https://renivaldocds.github.io" target="_blank"> RCDS Dev</a> <br>Deus
+                    seja Louvado<br>
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a hef="https://www.facebook.com/profile.php?id=100005006537913" target="_blank"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a hef="https://instagram.com/annahair_variedades?utm_medium=copy_link" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
+                                target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
                 </div>
-            </section>
-            <div class="sessao-header" id="videos">
-                <h1><i class="fa-solid fa-circle-play"></i> Videos</h1>
             </div>
-            <video width="320" poster="" controls>
-                <source src="media/video.mp4" type="video/mp4">
-                <source src="media/video.m4v" type="video/mp4">
-                <source src="media/video.webm" type="video/webm">
-                <source src="media/video.ogv" type="video/ogg">
-                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
-            </video>
-            <video id="carro-chefe" width="320" poster="" controls>
-                <source src="media/video02.mp4" type="video/mp4">
-                <source src="media/video02.mp4" type="video/mp4">
-                <source src="media/video.webm" type="video/webm">
-                <source src="media/video.ogv" type="video/ogg">
-                <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
-            </video>
-            <div id="localize" class=sessao-header>
-                <h1><i class="fa-solid fa-map-location-dot"></i> Localização</h1>
-            </div>
-            <div class="mapBox">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7610092714726!2d-46.8528546!3d-23.5410967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf016f81daae5f%3A0x5faaef2d8eac9a07!2sAnna%20Hair!5e0!3m2!1spt-BR!2sbr!4v1662363349096!5m2!1spt-BR!2sbr"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <footer>
-                <div class="footer-content">
-                    <p>
-                        Copyright &copy 2022,<a href="https://renivaldocds.github.io" target="_blank"> RCDS Dev</a> <br>Deus
-                        seja Louvado<br>
-                    </p>
-                    <div class="social-list">
-                        <ul>
-                            <li><a hef="https://www.facebook.com/profile.php?id=100005006537913" target="_blank"><i
-                                        class="fab fa-facebook"></i></a></li>
-                            <li><a hef="https://instagram.com/annahair_variedades?utm_medium=copy_link"
-                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
-                                    target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <a class="btn-whats visible-phone visible-tablet"
-                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
-                    target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                <a class="btn-whats hidden-phone hidden-tablet"
-                    href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
-                    target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                <!--opção pra adicionar audio na linh abaixo-->
-                <audio preload="metadata" autoplay controls loop>
-                    <source src="media/audio.mp3" type="audio/mpeg">
-                    <source src="media/audio.mp3" type="audio/ogg">
-                    <source src="media/audio.mp3" type="audio/wav">
-                    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="_audio/audio.mp3">Clique
-                            aqui
-                            para
-                            baixar o arquivo MP3</a></p>
-                </audio> -->
-            </footer>
-            <!--BOTÃO HOME-->
-            <a href="#home" id="link-topo">
-                <i class="fas fa-arrow-up"></i>
-            </a>
-</body>
-<script src="script.js"></script>
+            <a class="btn-whats visible-phone visible-tablet"
+                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
+                target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a class="btn-whats hidden-phone hidden-tablet"
+                href="https://api.whatsapp.com/send?phone=5511987745113&text=Gostaria%20de saber sobre seus serviços?"
+                target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <!--opção pra adicionar audio na linh abaixo-->
+            <audio preload="auto" autoplay controls loop>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                <source src="media/audio.mp3" type="audio/ogg">
+                <source src="media/audio.mp3" type="audio/wav">
+                <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="_audio/audio.mp3">Clique
+                        aqui
+                        para
+                        baixar o arquivo MP3</a></p>
+            </audio> -->
+        </footer>
+        <!--BOTÃO HOME-->
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).on('load', function () { // makes sure the whole site is loaded 
+                $('#preloader .inner').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({ 'overflow': 'visible' });
+            })
+  //]]>
+        </script>
+        <script src="app]"></script>
+        <script src="script.js"></script>
+    </body>
+
 </html>
